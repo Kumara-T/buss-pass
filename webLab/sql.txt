@@ -1,0 +1,17 @@
+CREATE DATABASE bus_pass_db;
+
+USE bus_pass_db;
+
+CREATE TABLE bus_pass_registration (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    dob DATE NOT NULL,
+    gender VARCHAR(50) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    address TEXT NOT NULL,
+    id_proof VARCHAR(255) NOT NULL,
+    route_from VARCHAR(255) NOT NULL,
+    route_to VARCHAR(255) NOT NULL,
+    duration VARCHAR(50) NOT NULL
+);
